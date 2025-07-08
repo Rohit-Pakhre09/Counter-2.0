@@ -34,7 +34,7 @@ function App() {
           >
             -
           </button>
-          <span className="text-3xl font-bold w-10 text-center">{count}</span>
+          <span className="text-3xl font-bold w-15 text-center">{count}</span>
           <button
             onClick={() => setCount(count + 1)}
             className="bg-blue-500 w-10 text-2xl p-2 rounded-md text-white font-medium cursor-pointer shadow-md hover:bg-blue-700"
