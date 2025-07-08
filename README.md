@@ -30,7 +30,7 @@ This project was built to practice React fundamentals like `useState` and condit
 - Detecting even/odd numbers
 - Checking if a number is prime
 
-All wrapped in a clean UI using Tailwind CSS.
+> All wrapped in a clean UI using Tailwind CSS.
 <img src="./public/Counter 2.0.png" style="margin-top: 10px;">
 
 ---
