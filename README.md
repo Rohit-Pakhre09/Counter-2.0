@@ -33,6 +33,8 @@ This project was built to practice React fundamentals like `useState` and condit
 > All wrapped in a clean UI using Tailwind CSS.
 <img src="./public/Counter 2.0.png" style="margin-top: 10px;">
 
+> Video Explanation: https://drive.google.com/file/d/1CzOShfiUnrfVkB_v7YBs6zxFnb5mWaOU/view?usp=drive_link
+
 ---
 
 ## ⚙️ Getting Started <a name="getting-started"></a>
