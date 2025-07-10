@@ -6,14 +6,14 @@ function App() {
   const checkPrimeNum = (num) => {
     let divisible = 0;
 
-    if (num == 0) return false;
+    if (num === 0) return false;
     for (let i = 1; i <= num; i++) {
       if (num % i === 0) {
         divisible++;
       }
     }
 
-    return divisor === 2 ? true : false;
+    return divisible === 2 ? true : false;
   };
 
   return (
