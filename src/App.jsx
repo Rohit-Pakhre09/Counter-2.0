@@ -4,12 +4,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   const checkPrimeNum = (num) => {
-    let divisor = 0;
+    let divisible = 0;
 
     if(num == 0)  return false;
-    for (let i = 1; i <= num; i++) {
+    for (let i = 1; i <= num; i++) { 
       if (num % i === 0) {
-        divisor++;
+        divisible++;
       }
     }
 
@@ -53,7 +53,7 @@ function App() {
         </section>
 
         <p className="text-gray-700 italic font-medium text-center">
-          Is counter is even or odd:{" "}
+          Is counter is even or odd:
           {count % 2 === 0 ? (
             <span className="text-emerald-500">Even</span>
           ) : (
@@ -61,7 +61,7 @@ function App() {
           )}
         </p>
         <p className="text-gray-700 italic font-medium text-center">
-          Is counter is prime or not prime:{" "}
+          Is counter is prime or not prime:
           {checkPrimeNum(count) ? <span className="text-yellow-400">Prime</span> : <span className="text-yellow-600">Not Prime</span> }
         </p>
       </section>
