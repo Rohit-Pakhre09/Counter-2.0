@@ -6,8 +6,8 @@ function App() {
   const checkPrimeNum = (num) => {
     let divisible = 0;
 
-    if(num == 0)  return false;
-    for (let i = 1; i <= num; i++) { 
+    if (num == 0) return false;
+    for (let i = 1; i <= num; i++) {
       if (num % i === 0) {
         divisible++;
       }
@@ -17,7 +17,9 @@ function App() {
   };
 
   return (
+    // Main Section
     <main className="min-h-screen bg-gray-200 flex items-center justify-center p-5">
+      {/* Header */}
       <section className="w-100 sm:w-120 h-auto p-5 rounded-xl shadoow-md bg-white">
         <header>
           <p className="font-bold text-center text-2xl uppercase">
@@ -26,6 +28,7 @@ function App() {
           <hr className="mt-3 opacity-10" />
         </header>
 
+        {/* Buttons Plus and Minus */}
         <section className="flex gap-5 justify-center items-center p-3">
           <button
             onClick={() => setCount(count - 1)}
@@ -43,6 +46,7 @@ function App() {
           </button>
         </section>
 
+        {/* Reset Button */}
         <section className="flex justify-center items-center mb-5">
           <button
             onClick={() => setCount(0)}
@@ -52,6 +56,7 @@ function App() {
           </button>
         </section>
 
+        {/* Even/Odd and Prime/Not-Prime Showing */}
         <p className="text-gray-700 italic font-medium text-center">
           Is counter is even or odd:
           {count % 2 === 0 ? (
@@ -62,7 +67,11 @@ function App() {
         </p>
         <p className="text-gray-700 italic font-medium text-center">
           Is counter is prime or not prime:
-          {checkPrimeNum(count) ? <span className="text-yellow-400">Prime</span> : <span className="text-yellow-600">Not Prime</span> }
+          {checkPrimeNum(count) ? (
+            <span className="text-yellow-400">Prime</span>
+          ) : (
+            <span className="text-yellow-600">Not Prime</span>
+          )}
         </p>
       </section>
     </main>
